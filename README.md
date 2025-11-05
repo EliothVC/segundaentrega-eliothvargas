@@ -1,46 +1,61 @@
-# Astro Starter Kit: Basics
+# Sitio de la Ilustre Municipalidad de Castro (Astro + Tailwind + TypeScript)
 
-```sh
-npm create astro@latest -- --template basics
+Este proyecto es un sitio informativo construido con Astro, TailwindCSS 4.1 y TypeScript. Incluye páginas internas completas, un blog de noticias con contenido dinámico consumido desde un archivo JSON local y diseño responsive para Desktop, Tablet y Celular.
+
+## Descripción general
+
+- Uso de `Layout.astro` para integrar `Header` y `Footer` en todas las páginas.
+- Componentes reutilizables para secciones principales (Inicio, Blog, Historia, Transparencia, Contacto, etc.).
+- archivos TypeScript para la información de las paginas.
+- Blog con tarjetas que enlazan a vistas individuales de cada noticia, generadas en build desde `src/data/noticias.json`.
+- Tailwind 4.1 para estilos con utilidades responsive y transiciones sutiles.
+
+## Contenido dinámico (JSON)
+
+- Fuente: `src/data/noticias.json`.
+- Cada noticia incluye: `id`, `titulo`, `fecha`, `tiempo_lectura`, `imagen`, `categoria`, `resumen`, `href` y `contenido` (bloques de `parrafo`, `subtitulo`, `cita`, `lista`).
+- Las páginas individuales se generan con `getStaticPaths` en `src/pages/blog/[id].astro`, mapeando el `href` (por ejemplo `"/blog/noticia1"`) a `params.id`.
+
+### Añadir una nueva noticia
+
+1. Agrega un nuevo objeto en `src/data/noticias.json` dentro de `noticias` con los campos anteriores y un `href` del tipo `"/blog/noticia7"`.
+2. Coloca la imagen en `public/` (ejemplo: `"/Noticia7.jpg"`).
+3. Ejecuta el build: la ruta `"/blog/noticia7"` se generará automáticamente.
+
+## Estilos y responsive
+
+- TailwindCSS 4.1 configurado y cargado vía `src/styles/global.css`.
+- Utilidades responsive (`sm`, `md`, `lg`) aplicadas en grid, tipografías y espaciados.
+- Paleta de colores coherente por sección; transiciones y `hover` sutiles en tarjetas.
+
+## Estructura de carpetas (resumen)
+
+```
+src/
+  assets/
+  components/
+  data/
+  layouts/
+  pages/
+  styles/
+public/
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Scripts
 
-## 🚀 Project Structure
+- `npm install` instala dependencias.
+- `npm run dev` inicia el servidor de desarrollo.
+- `npm run build` genera la versión de producción en `dist/`.
+- `npm run preview` previsualiza el build localmente.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Notas de diseño y decisiones
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- Se prioriza HTML semántico y componentes claros.
+- `Header` sticky y `Footer` consistente a través de `Layout.astro`.
+- Las vistas de noticia renderizan bloques por `tipo`: subtítulos, párrafos, citas y listas.
+- Idioma del documento configurado: `<html lang="es">`.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Entrega y pruebas
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Rutas probadas: `/`, `/blog`, `/blog/noticia1`…`/blog/noticia6`, `/nosotros`, `/historia`, `/transparencia`, `/contacto`.
+- Responsive comprobado en Desktop, Tablet y Celular.
