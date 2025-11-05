@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import ImageAlcalde from "../assets/images/Alcalde.jpg";
+import ImageOrganigrama from "../assets/images/organigrama2021.jpg";
+import { alcalde, tarjetas } from "../data/Nosotros.ts";
+---
+
+<!--Sección del Alcalde-->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Nuestro Alcalde</h2>
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/3">
+                <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+                    <Image src={ImageAlcalde} alt={alcalde.nombre} class="w-full h-auto" />
+                </div>
+            </div>
+
+            <div class="lg:w-2/3">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">{alcalde.nombre}</h3>
+                <p class="text-gray-600 mb-4">{alcalde.subtitulo}</p>
+
+                <div class="prose max-w-none">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">{alcalde.tituloEmail}</h3>
+                    <p class="text-gray-600 mb-4">{alcalde.textoEmail}</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">{alcalde.tituloTelefono}</h3>
+                    <p class="text-gray-600 mb-6">{alcalde.textoTelefono}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Concejales-->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Concejo Municipal</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tarjetas.map((item)=>(
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out hover:translate-y-[-5px] hover:shadow-lg">
+                    <div class="bg-gray-200">
+                        <Image src={item.imagen} alt={item.nombre} class="w-full h-auto" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">{item.nombre}</h3>
+                        <p class="text-red-500 font-medium mb-4">{item.partido}</p>
+                        <h3 class="font-bold text-gray-800 mb-2">{item.tituloTelefono}</h3>
+                        <p class="text-gray-600 mb-4">{item.textoTelefono}</p>
+                        <h3 class="font-bold text-gray-800 mb-2">{item.tituloEmail}</h3>
+                        <p class="text-gray-600 mb-4">{item.textoEmail}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<!-- Sección Organigrama -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Organigrama Municipal</h2>
+
+        <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+            <div class="flex flex-col items-center">
+                <Image src={ImageOrganigrama} alt="Organigrama"/>
+            </div>
+        </div>
+    </div>
+</section>

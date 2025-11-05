@@ -1,0 +1,44 @@
+---
+import { menu } from "../data/Header";
+---
+<!-- Menu Escritorio -->
+<nav class="hidden md:flex space-x-6">
+    <ul class="flex flex-row gap-x-6">
+        {menu.map((items)=> (
+            <li class="text-gray-700 font-medium hover:text-red-500 transition duration-300">
+                <a href={items.href}>{items.texto}</a>
+            </li>
+        ))}
+    </ul>
+</nav>
+
+<!-- Boton Hamburguesa -->
+<button id="menu-alt" class="relative w-4 h-4 flex flex-col justify-between items-center md:hidden focus:outline-none">
+    <span class="block h-0.5 w-4 bg-gray-700 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2.5"></span>
+    <span class="block h-0.5 w-4 bg-gray-700 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
+    <span class="block h-0.5 w-4 bg-gray-700 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-2.5"></span>
+</button>
+
+<!-- Menu Celular con Animación -->
+<nav id="menu-celular" class="absolute top-16 left-0 w-full bg-white shadow-md transform scale-y-0 origin-top transition-transform duration-300 md:hidden">
+    <div class="flex flex-col space-y-4 p-4">
+        {menu.map((items)=>(
+            <a href={items.href} class="text-gray-700 font-medium hover:text-red-500 py-2 px-4 rounded hover:bg-blue-50 transition duration-300">{items.texto}</a>
+        ))}
+    </div>
+</nav>
+
+<script>
+    const menuAlt = document.getElementById('menu-alt'); // aca obtenemos el elemento con la ID
+    const menuCelular = document.getElementById('menu-celular'); // aca tambien
+
+    // aca se hace la verificación de que los elementos existan
+    if (menuAlt && menuCelular) {
+        menuAlt.addEventListener('click', () => {
+            // aqui alternamos la clase de Animación
+            menuAlt.classList.toggle('open');
+            menuCelular.classList.toggle('scale-y-0');
+            menuCelular.classList.toggle('scale-y-100');
+        });
+    }
+</script>

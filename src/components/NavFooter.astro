@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import ImageBlanco from "../assets/images/blanco.png";
+import { links, info, socialLinks } from "../data/Footer";
+---
+
+<div>
+    <a href="/">
+        <Image src={ImageBlanco} alt="LogoBlanco" class="h-16 w-auto mb-4" />
+    </a>
+    <p class="mb-4">Trabajando por el desarrollo y bienestar de nuestra comunidad.</p>
+    <div class="flex space-x-4">
+        <a href={socialLinks.facebook} class="hover:text-blue-200 transition duration-300">
+            Facebook
+        </a>
+        <a href={socialLinks.instagram} class="hover:text-blue-200 transition duration-300">
+            Instagram
+        </a>
+    </div>
+</div>
+
+<div>
+    <h3 class="text-xl font-bold mb-8">Enlaces Rápidos</h3>
+    <ul class="space-y-3">
+        {links.map((item)=>(
+            <li><a href={item.href} class="text-gray-300 hover:text-white transition duration-300">{item.texto}</a></li>
+        ))}
+    </ul>
+</div>
+
+<div>
+    <h3 class="text-xl font-bold mb-6">Contacto</h3>
+    <ul class="space-y-3 text-white">
+        <li class="flex items-start">{info.direccion}</li>
+        <li class="flex items-start">{info.telefono}</li>
+        <li class="flex items-start">{info.email}</li>
+        <li class="flex items-start">{info.horario}</li>
+    </ul>
+</div>

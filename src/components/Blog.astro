@@ -1,0 +1,99 @@
+---
+import { noticias } from "../data/Hero.ts";
+import Noticias from "../data/noticias.json";
+import { paginacion, newsletter } from "../data/Blog.ts";
+---
+
+<!--Hero-->
+<section class="py-12 bg-linear-to-br from-red-600 to-red-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">{noticias.titulo}</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto">{noticias.subtitulo}</p>
+    </div>
+</section>
+
+<!--filtro y Búsqueda -->
+<section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="w-full md:w-1/3">
+                <input type="text" placeholder="Buscar Noticias..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+            </div>
+        
+            <div class="w-full md:w-2/3">
+                <div class="flex flex-wrap gap-3 justify-center md:justify-end">
+                    <button class="px-4 py-2 bg-red-500 text-white rounded-full text-sm font-medium">
+                        Todas
+                    </button>
+                    {Noticias.categorias.map((categoria)=>(
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full text-sm font-medium hover:bg-red-500 hover:text-white transition">
+                                {categoria}
+                        </button>
+                    ))}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Noticias -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Ultimas Noticias</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Noticias.noticias.map((noticia)=>(
+                <article class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg transform hover:-translate-y-1.5">
+                    <div class="relative">
+                        <span class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            {noticia.categoria}
+                        </span>
+                        <img 
+                            src={noticia.imagen} 
+                            alt={noticia.titulo} 
+                            class="w-full h-48 object-cover"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <span>{noticia.fecha}</span>
+                            <span class="mx-2">-</span>
+                            <span>{noticia.tiempo_lectura}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">{noticia.titulo}</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            {noticia.resumen}
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href={noticia.href} class="text-red-500 font-medium hover:underline inline-flex items-center">
+                                → Leer más
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            ))}
+        </div>
+
+        <!--Paginación-->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex space-x-2">
+                <a href={paginacion.url_previous} class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-700 rounded-lg hover:bg-red-500 hover:text-white transition duration-100">←</a>
+                <a href={paginacion.url_actual} class="w-10 h-10 flex items-center justify-center bg-red-500 text-white rounded-lg">{paginacion.pagina_actual}</a>
+                <a href={paginacion.url_next} class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-700 rounded-lg hover:bg-red-500 hover:text-white transition duration-100">→</a>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<!--Sección Newsletter -->
+<section class="py-16 bg-linear-to-br from-red-600 to-red-800 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">{newsletter.titulo}</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">{newsletter.subtitulo}</p>
+
+        <form class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-4">
+            <input type="email" placeholder={newsletter.placeholder} class="grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white text-white">
+            <button type="submit" class="bg-white text-red-600 font-bold px-6 py-3 rounded-lg hover:bg-blue-700 hover:text-white transition duration-300">{newsletter.boton}</button>
+        </form>
+    </div>
+</section>

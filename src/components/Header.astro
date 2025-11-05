@@ -1,0 +1,50 @@
+---
+import { contactInfo, socialLinks } from "../data/Header";
+import { Image } from "astro:assets";
+import ImageLogo from "../assets/images/escudo.png";
+import NavHeader from "./NavHeader.astro";
+---
+
+<!-- Encabezado Principal -->
+<div class="bg-blue-800 text-white py-2 hidden md:block">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex space-x-4">
+                <div class="flex items-center">
+                    <span class="text-sm">{contactInfo.phone}</span>
+                </div>
+                <div>
+                    <span class="text-sm">{contactInfo.email}</span>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <a href={socialLinks.facebook} class="hover:text-blue-200 transition duration-300">
+                    Facebook
+                </a>
+                <a href={socialLinks.instagram} class="hover:text-blue-200 transition duration-300">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+            <a href="/">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center mr-3">
+                        <Image src={ImageLogo} alt="Logo" class="w-10 h-10 object-contain" />
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Municipalidad de</h1>
+                        <h2 class="text-xl font-bold text-red-500">Castro</h2>
+                    </div>
+                </div>
+            </a>
+            <NavHeader />
+        </div>
+    </div>
+</header>

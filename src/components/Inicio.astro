@@ -1,0 +1,172 @@
+---
+import { Image } from 'astro:assets';
+import ImageInicio from '../assets/images/Castro.png';
+import ImageHistoria from '../assets/images/iglesia.jpg';
+import { inicio } from '../data/Hero.ts';
+import { tarjetas, historia, transparencia, info, contacto } from '../data/Inicio.ts';
+
+import Noticias from '../data/noticias.json';
+const noticiasDestacadas = Noticias.noticias.filter((noticia)=> noticia.destacada);
+---
+
+<!--sección hero-->
+<section id="Inicio" class="relative bg-gray-800">
+    <div class="absolute inset-0 z-10 flex items-center justify-center">
+        <div class="text-center max-w-3xl text-white px-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 rounded-lg bg-violet-600">
+                {inicio.titulo}
+            </h2>
+            <p class="text-lg sm:text-xl md:text-2xl mb-8 rounded-lg bg-amber-400">
+                {inicio.subtitulo}
+            </p>
+            <a href="#Historia" class="bg-red-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center mx-auto">
+                {inicio.botonTexto}
+            </a>
+        </div>
+    </div>
+    <div class="h-64 sm:h-64 md:h-96 bg-gray-600">
+        <Image src={ImageInicio} alt={inicio.imagenAlt} class="w-full h-full object-cover" />
+    </div>
+</section>
+
+<!--Sección de acceso rápido-->
+<section class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Accesos Rápidos</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {tarjetas.map((item)=>(
+                <a href={item.href} class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-red-500 bg-opacity-10 text-white font-bold flex items-center justify-center mb-4">
+                        {item.id}
+                    </div>
+                    <span class="font-medium text-gray-700">{item.texto}</span>
+                </a>
+            ))}
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Ultimas Noticias-->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Ultimas Noticias</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {noticiasDestacadas.map((item)=>(
+                <article class="bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg transform hover:-translate-y-1.5">
+                    <div class="relative">
+                        <span class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">{item.categoria}</span>
+                        <img src={item.imagen} alt={item.titulo} class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-cente text-sm text-gray-500 mb-3">
+                            <span>{item.fecha}</span>
+                            <span class="mx-2">-</span>
+                            <span>{item.tiempo_lectura}</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">{item.titulo}</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">{item.resumen}</p>
+                        <a href={item.href} class="text-red-500 font-medium hover:underline inline-flex items-center">Leer más</a>
+                    </div>
+                </article>
+            ))}
+        </div>
+            <div class="text-center mt-12">
+                <a href="/blog" class="bg-red-500 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center mx-auto">Más Noticias</a>
+            </div>
+    </div>
+</section>
+
+<!--Historia Section-->
+<section id="Historia" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <Image src={ImageHistoria} alt="Iglesia" class="rounded-lg shadow-md w-full" />
+            </div>
+
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Nuestra Historia</h2>
+                    {historia.map((item) => (
+                        <p class="text-gray-600 mb-6">{item.texto}</p>
+                    ))}
+                <a href="/historia" class="inline-block bg-red-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Leer más sobre nuestra Historia
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Transparencia Section -->
+<section id="Transparencia" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ley de Transparencia</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Conoce cómo garantizamos el acceso a la información pública y fomentamos la probidad en nuestra gestión municipal</p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <!-- Información a la izquierda -->
+            <div class="lg:w-1/2 w-full">
+                <div class="bg-gray-100 rounded-lg shadow-md p-6 md:p-8">
+                    {transparencia.map((items)=>(
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">{items.titulo}</h3>
+                        <p class="text-gray-600 mb-4">{items.texto}</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-6 space-y-2">
+                            {items.lista.map((item)=>(
+                                <li>{item}</li>
+                            ))}
+                        </ul>
+                    ))}
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://transparencia.municastro.cl/" class="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Portal de Transparencia
+                        </a>
+                        <a href="/transparencia" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+                            Solicitar Información
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen/Infografía a la derecha -->
+            <div class="lg:w-1/2 w-full">
+                <div class="bg-red-500 rounded-lg shadow-md p-6 md:p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-6 text-center">¿Cómo acceder a la información?</h3>
+                    
+                    <div class="space-y-6">
+                        {info.map((item) => (
+                            <div class="flex items-start">
+                                <div class="bg-white text-red-500 rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                                    <span class="font-bold">{item.numero}</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">{item.titulo}</h4>
+                                    <p class="text-white opacity-90">{item.texto}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div class="mt-8 p-4 rounded-lg">
+                        <p class="text-center font-bold">Plazo máximo de respuesta: 20 días hábiles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contacto-->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        {contacto.map((item)=>(
+            <h2 class="text-3xl font-bold mb-4">{item.titulo}</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">{item.texto}</p>
+            <div class="text-center mt-12">
+                <a href={item.link} class="bg-red-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center mx-auto">Mas Información</a>
+            </div>
+        ))}
+    </div>
+</section>

@@ -1,0 +1,296 @@
+{
+    "noticias": [
+        {
+            "id": 1,
+            "titulo": "Castro conmemora 182 años de la gesta de la Goleta Ancud con acto cultural y llamado a la memoria histórica",
+            "fecha": "23 de Septiembre, 2025",
+            "tiempo_lectura": "10 min de lectura",
+            "imagen": "/Noticia1.jpeg",
+            "categoria": "Cultura",
+            "destacada": true,
+            "resumen": "La comuna de Castro celebró con un emotivo acto el 182 aniversario de la toma y posesión del Estrecho de Magallanes por parte de la Goleta Ancud...",
+            "href": "/blog/noticia1",
+            "contenido": [
+                {
+                    "tipo": "parrafo",
+                    "texto": "La ciudad de Castro rindió homenaje a los 182 años de la gesta histórica de la Goleta Ancud, una expedición que tuvo un papel fundamental en la toma de posesión del Estrecho de Magallanes y la soberanía chilena en la Patagonia."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La ceremonia conmemorativa se llevó a cabo en la Plaza de Armas de Castro, con la presencia del alcalde Baltazar Elgueta, autoridades locales, representantes de la Armada de Chile y miembros de la comunidad educativa"
+                },
+                {
+                    "tipo": "subtitulo",
+                    "texto": "Significado histórico"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La Goleta Ancud, al mando del capitán John Williams Wilson, zarpó desde Ancud el 22 de mayo de 1843 con la misión de tomar posesión del Estrecho de Magallanes en nombre de Chile. Después de una travesía llena de dificultades, la expedición logró su objetivo el 21 de septiembre de 1843, fortaleciendo la soberanía nacional en el extremo sur del continente."
+                },
+                {
+                    "tipo": "cita",
+                    "texto": "La gesta de la Goleta Ancud representa el espíritu emprendedor y valiente de nuestro pueblo chilote, que con determinación contribuyó a forjar la identidad nacional"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Durante el acto conmemorativo, el alcalde Baltazar Elgueta destacó la importancia de mantener viva la memoria histórica: Recordar esta gesta nos permite valorar nuestro patrimonio cultural y comprender las raíces de nuestra identidad como castreños y chilenos."
+                },
+                {
+                    "tipo": "subtitulo",
+                    "texto": "Actividades de conmemoración"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La programación incluyó:"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La conmemoración contó con la activa participación de la comunidad escolar, que presentó diversas muestras artísticas que realzaron la hazaña. Estudiantes de las escuelas Inés Muñoz de García y Luis Uribe Díaz fueron protagonistas, asumiendo el rol de precursores para mantener viva esta parte fundamental de la historia nacional."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Los estudiantes de diversos establecimientos educacionales participaron activamente en las actividades, demostrando el interés de las nuevas generaciones por conocer y preservar la historia local."
+                },
+                {
+                    "tipo": "lista",
+                    "titulo": "Datos Historicos",
+                    "items": [
+                        "Fecha de zarpe: 22 de mayo de 1843",
+                        "Lugar de zarpe: Ancud, Chiloé",
+                        "Comandante: John Williams Wilson",
+                        "Tripulación: 22 hombres, en su mayoría chilotes",
+                        "Objetivo: Tomar posesión del Estrecho de Magallanes"
+                    ]
+                },
+                {
+                    "tipo": "subtitulo",
+                    "texto": "Proyección futura"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "El municipio anunció que trabajará en la creación de un espacio museográfico permanente dedicado a la historia naval de Chiloé, con especial énfasis en la gesta de la Goleta Ancud. Este proyecto busca convertirse en un atractivo turístico y educativo para residentes y visitantes."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Queremos que las futuras generaciones conozcan y valoren este importante capítulo de nuestra historia, señaló el alcalde Baltazar Elgueta durante su discurso."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La conmemoración concluyó con un sentido minuto de silencio en honor a los tripulantes de la Goleta Ancud y todos aquellos que han contribuido a la historia y desarrollo de Castro y Chiloé."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Con gran éxito finalizó el Taller de Cueca",
+            "fecha": "17 de Septiembre, 2025",
+            "tiempo_lectura": "3 min de lectura",
+            "imagen": "/Noticia2.jpeg",
+            "categoria": "Cultura",
+            "destacada": true,
+            "resumen": "El Departamento de Cultura de la Ilustre Municipalidad de Castro dio término esta semana al taller de Cueca...",
+            "href": "/blog/noticia2",
+            "contenido": [
+                {
+                    "tipo": "parrafo",
+                    "texto": "El Departamento de Cultura de la Ilustre Municipalidad de Castro dio término esta semana al taller de Cueca realizado en el marco del mes de la patria, una iniciativa que reunió a más de 150 inscritos y que certificó a más de 30 participantes."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "En la muestra final, los alumnos demostraron lo aprendido bailando cueca chilota y central, guiados por los talleristas de la agrupación folclórica “Brisas del Alma”, quienes entregaron las herramientas y pasos básicos de nuestro baile nacional."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "El alcalde Baltazar Elgueta Cheuquepil destacó el entusiasmo de los asistentes y reafirmó el compromiso municipal con instancias que fortalecen nuestras tradiciones."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Por su parte, Sixto Cuyul, encargado del área de Cultura Tradicional, realizó un balance positivo del taller, señalando que “se cumplió el objetivo de generar un espacio de aprendizaje en torno a nuestro baile nacional”. Además, adelantó que los alumnos serán parte del desfile del 18 de septiembre, junto a los conjuntos folclóricos de la comuna."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Daniela Saldivia, monitora del taller, resaltó el gran compromiso de los participantes, quienes pusieron todo el empeño en aprender. “Se les enseño tres tipos vueltas iniciales, escobillados, zapateos, cómo se mueve el pañuelo y todo esto se pudo ejecutar muy bien ya que la gente estaba muy motivada para salir adelante con este taller”, dijo."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Se viene la gran Fiesta de la Chilenidad en Castro",
+            "fecha": "16 de Septiembre, 2025",
+            "tiempo_lectura": "4 min de lectura",
+            "imagen": "/Noticia3.jpg",
+            "categoria": "Cultura",
+            "destacada": true,
+            "resumen": "Municipio castreño invita a celebrar los días 18 y 19 de septiembre en el Parque Municipal...",
+            "href": "/blog/noticia3",
+            "contenido": [
+                {
+                    "tipo": "subtitulo",
+                    "texto": "Municipio castreño invita a celebrar los días 18 y 19 de septiembre en el Parque Municipal"
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Por séptimo año consecutivo, la Ilustre Municipalidad de Castro invita a la comunidad a participar de una nueva versión de la Fiesta de la Chilenidad, iniciativa que pretende llenar de música, color y tradición este feriado de Fiestas Patrias."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "“Este 18 y 19 de septiembre los esperamos en el parque municipal para participar de la Fiesta de la Chilenidad. Vamos a tener ricas comidas folclore, música bailable y esperamos que acudan en familia y con sus amigos”, señaló el Alcalde Baltazar Elgueta Cheuquepil."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Las dos jornadas incluirán presentaciones en vivo de conjuntos folclóricos, grupos tropicales y artistas locales que darán vida a nuestra celebración patria. Y para los más pequeños, se realizarán actividades lúdicas a cargo de Trukito Malabares y Picapalos."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Junto con invitar a disfrutar de las actividades de Fiestas Patrias que tiene organizado el municipio, el alcalde Elgueta también tuvo tiempo para hacer un llamado a la responsabilidad."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "“Los invitamos a que lo pasen en familia, con amigos y también haciendo una convivencia con moderación. No queremos tener tragedias por beber alcohol y conducir. Rogamos a que en esta oportunidad hagamos conciencia”, señaló."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titulo": "Invitan a estudiantes de Castro a participar en concurso contra la violencia escolar",
+            "fecha": "16 de Septiembre, 2025",
+            "tiempo_lectura": "3 min de lectura",
+            "imagen": "/Noticia4.jpg",
+            "categoria": "Educación",
+            "destacada": false,
+            "resumen": "Se trata de una iniciativa de la Municipalidad de Castro y Slep Chiloé dirigida a alumnos de 5° a 8° básico de establecimientos públicos y particulares subvencionados...",
+            "href": "/blog/noticia4",
+            "contenido": [
+                {
+                    "tipo": "subtitulo",
+                    "texto": "Se trata de una iniciativa de la Municipalidad de Castro y Slep Chiloé dirigida a alumnos de 5° a 8° básico de establecimientos públicos y particulares subvencionados."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La Dirección de Seguridad Pública de la Municipalidad de Castro, en colaboración con el Servicio Local de Educación Pública (SLEP) Chiloé, lanzaron el concurso “Resta Violencia, Suma Buen Trato”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La iniciativa busca que los escolares promuevan el buen trato y la disminución de la violencia en sus distintas manifestaciones."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "El certamen invita a estudiantes de 5° a 8° básico a crear un afiche con mensajes que fomenten la buena convivencia entre compañeros, hacia los profesores y en las relaciones de noviazgo."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Durante el lanzamiento, la directora de Seguridad Pública, Adriana Faba, destacó la importancia de que se genere una “instancia de diálogo” en las comunidades educativas. “Para nosotros es importante prevenir y creemos que una de estas formas es invitando a los estudiantes, de 5° a 8° básico a realizar un afiche colectivo, la ideas es que colaboremos en conjunto”, precisó."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "En tanto, el director del SLEP Chiloé, Pablo Baeza, se refirió a la colaboración como un paso crucial para enfrentar los desafíos en las escuelas. “sabemos que el municipio ha estado trabajando con esta idea desde hace tiempo, por lo que estamos muy contentos que nos hayan considerado, entendiendo el convenio que tenemos como socios estratégicos en materia de educación”, afirmó."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Las bases del concurso, que se desarrollará del 13 al 20 de octubre, se encuentran disponibles en el sitio web de la Municipalidad de Castro."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Para más información, los interesados pueden acercarse a la Oficina de Seguridad Pública, ubicada en Thompson 297."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "titulo": "Hilando memoria y comunidad: Inauguran exposición de arpilleras del barrio Tejiendo Sueños en Castro",
+            "fecha": "09 de Septiembre, 2025",
+            "tiempo_lectura": "7 min de lectura",
+            "imagen": "/Noticia5.jpeg",
+            "categoria": "Infraestructura",
+            "destacada": false,
+            "resumen": "La muestra “Memorias hiladas, heredan comunidad” reúne obras creadas por vecinas de los sectores La Esperanza, Yungay y Camilo Henríquez, transformando recuerdos y dolores en arte y esperanza colectiva.",
+            "href": "/blog/noticia5",
+            "contenido": [
+                {
+                    "tipo": "parrafo",
+                    "texto": "La muestra “Memorias hiladas, heredan comunidad” reúne obras creadas por vecinas de los sectores La Esperanza, Yungay y Camilo Henríquez, transformando recuerdos y dolores en arte y esperanza colectiva."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Con la asistencia de participantes y sus familiares, estudiantes, autoridades y académicos, se inauguró en el hall central de la Universidad de Los Lagos, sede Chiloé, la exposición “Memorias hiladas, heredan comunidad”, que exhibe las arpilleras confeccionadas por mujeres del barrio Tejiendo Sueños de Castro."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La iniciativa marca el cierre del taller “Puntadas de Identidad”, realizado en el marco del programa Quiero mi Barrio durante los meses de junio a agosto del 2025, y contó con la colaboración de la carrera de Psicología de la Universidad de Los Lagos, y la Politécnica de Valencia y su programa ADSIDEO."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "El Taller de arpilleras se realizó como continuidad de taller iniciado por la carrera de Psicología de la ULagos durante el año 2024 con mujeres del sector de Camilo Henríquez."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Las obras presentadas, “Desde los recuerdos nos volvemos a levantar”, confeccionados durante el primer taller, y “Puntadas de Identidad”, en el segundo, retratan la memoria, la identidad y la unión comunitaria, incluyendo hitos significativos como el incendio que afectó en 2021 a las poblaciones Camilo Henríquez y Yungay."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La vecina María Eugenia Velázquez expresó que, con el incendio, “o nos perdíamos o nos reencontrábamos”, y que este tipo de espacio, “nos ayudó a unirnos y a crear algo hermoso juntas”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Por su parte, Carmen Antiñanco, presidenta de la JJVV Nueva Aurora, agregó que el taller, “fue una terapia que nos ayudó a sanar y a mantener el optimismo a pesar de lo vivido”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Desde el municipio, Arístides Cárdenas, jefe de gabinete, valoró la iniciativa, remarcando la labor del Quiero mi Barrio, cómo agente para propiciar este tipo de instancias comunitarias, indicando que “es un programa muy potente, que debemos mantener y fortalecer porque trabaja en profundidad con la comunidad”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Cabe destacar que, el taller “Puntadas con identidad” es una de las dos iniciativas regionales seleccionadas, de un total de 16 a nivel país que competirán del Concurso Nacional de Buenas Prácticas Barriales del MINVU, en la categoría Cuidados y Género."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "En esa misma línea, Pamela Burgos, Encargada Social del Programa Recuperación de Barrios en Los Lagos, valoró este tipo de acciones y su vinculación con otras instituciones, instancia que “buscó trabajar elementos de la identidad desde el contexto de desastre con perspectiva de género”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La ceremonia concluyó con la exhibición de un video que recopiló momentos del taller y la entrega de certificados a las participantes, en reconocimiento a su compromiso y dedicación."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "titulo": "Castro: Con masiva capacitación reconocen a las guardadoras de semillas",
+            "fecha": "08 de Septiembre, 2025",
+            "tiempo_lectura": "7 min de lectura",
+            "imagen": "/noticia6.jpeg",
+            "categoria": "Cultura",
+            "destacada": false,
+            "resumen": "En el marco del Día de la Mujer Indígena, la Dirección de Desarrollo Comunitario de la Ilustre Municipalidad de Castro, realizó este viernes la Capacitación “Mujeres guardadoras de semillas” en el Centro Cultural. Esta iniciativa también fue replicada en las Isla Quehui y el próximo 10 de septiembre en Chelín a modo de descentralizar el conocimiento.",
+            "href": "/blog/noticia6",
+            "contenido": [
+                {
+                    "tipo": "parrafo",
+                    "texto": "En el marco del Día de la Mujer Indígena, la Dirección de Desarrollo Comunitario de la Ilustre Municipalidad de Castro, realizó este viernes la Capacitación “Mujeres guardadoras de semillas” en el Centro Cultural. Esta iniciativa también fue replicada en las Isla Quehui y el próximo 10 de septiembre en Chelín a modo de descentralizar el conocimiento."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Con la presencia del alcalde Baltazar Elgueta Cheuquepil y con más de 40 mujeres usuarias de diversas oficinas de Dideco, se hizo un sentido reconocimiento a la gran labor patrimonial de las cuidadoras, que guardan, clasifican, comparten y multiplican ejemplares de frutas y hortalizas, y preservan sabiduría ancestral para las nuevas generaciones."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Durante el encuentro, el alcalde tuvo sentidas palabras para las mujeres presentes. “Reconocemos y valoramos la sabiduría, la fuerza y el legado de las mujeres de los pueblos originarios que han sido y siguen siendo las guardianas de la vida, de la cultura y de la memoria”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "La conservación de semillas locales es un tema de gran interés para muchas agricultoras de la comuna de Castro, señaló Jessica Millalonco, tallerista. “Es importante conocer la experiencia de las guardadoras que hoy están presentes en esta jornada. Hay que conocer ciertos criterios para llegar a producir semillas y lograr conservarlas y que nos duren harto en el tiempo”."
+                },
+                {
+                    "tipo": "parrafo",
+                    "texto": "Por su parte, la vecina Irma Silva valoró esta instancia. “Siempre me ha gustado la huerta y guardar mi semilla. Si uno tiene la paciencia de guardar la semilla uno no compra nada en la temporada”, dijo."
+                }
+            ]
+        }
+    ],
+    "categorias": [
+        "Infraestructura",
+        "Cultura",
+        "Deportes",
+        "Educación",
+        "Salud"
+    ]
+}
