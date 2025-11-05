@@ -2,6 +2,18 @@
 
 Este proyecto es un sitio informativo construido con Astro, TailwindCSS 4.1 y TypeScript. Incluye páginas internas completas, un blog de noticias con contenido dinámico consumido desde un archivo JSON local y diseño responsive para Desktop, Tablet y Celular.
 
+## Instalar Astro
+
+- `npm create astro@latest`
+
+### Instalar tailwindcss
+
+- `npx astro add tailwindcss`
+
+### Correr el Proyecto
+
+- `npm run dev`
+
 ## Descripción general
 
 - Uso de `Layout.astro` para integrar `Header` y `Footer` en todas las páginas.
@@ -41,19 +53,11 @@ src/
 public/
 ```
 
-## Scripts
-
-- `npm install` instala dependencias.
-- `npm run dev` inicia el servidor de desarrollo.
-- `npm run build` genera la versión de producción en `dist/`.
-- `npm run preview` previsualiza el build localmente.
-
 ## Notas de diseño y decisiones
 
 - Se prioriza HTML semántico y componentes claros.
-- `Header` sticky y `Footer` consistente a través de `Layout.astro`.
+- `Header` y `Footer` consistentes a través de `Layout.astro`.
 - Las vistas de noticia renderizan bloques por `tipo`: subtítulos, párrafos, citas y listas.
-- Idioma del documento configurado: `<html lang="es">`.
 
 ## Entrega y pruebas
 
